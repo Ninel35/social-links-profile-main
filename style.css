@@ -14,8 +14,8 @@ h1{
     margin-top: 0;
 }
 h3{
-     /* font-size: 10px; */
      margin-top: 0;
+   
 }
 .header-level{
     color:rgba(162, 218, 32, 0.991);
@@ -26,12 +26,15 @@ h3{
    padding: 15px;
    height: 90%;
    width: 65%;
+   display: flex;
+   flex-direction: column;
+      align-items: center;
 }
 
 @media screen and (min-width: 768px){
     .container{
    background-color:dimgray;
-   padding: 20px;
+    padding: 20px;
    height: 70%;
    width: 20%;
 }
@@ -47,25 +50,30 @@ h3{
     padding-bottom: 10px;
 }
 .box-container{
+   width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     gap: 10px;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
 }
 .social{
-    text-decoration: none;
-    font-weight:600;
-    color: white;
+    list-style: none;
     cursor: pointer;
     background-color:rgba(0, 0, 0, 0.251);
-   width: 90%;
+   width: 100%;
    text-align: center;
    padding-top: 10px;
    padding-bottom: 10px;
    border-radius: 10px;
 }
-
+.social a{
+ text-decoration: none;
+    font-weight:600;
+    color: white;
+}
 .social:hover{
     color:chartreuse;
     background-color: rgb(177, 43, 226);
